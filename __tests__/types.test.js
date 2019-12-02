@@ -4,6 +4,7 @@ const {
   isBoolean,
   castToNumber,
   castToString,
+  castToBoolean,
   getCaster
 } = require('../lib/types.js');
 
