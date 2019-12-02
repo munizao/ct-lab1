@@ -2,6 +2,7 @@ const {
   isNumber,
   isString,
   isBoolean,
+  isArray,
   castToNumber,
   castToString,
   castToBoolean,
@@ -34,6 +35,15 @@ describe('validator module', () => {
       expect(isBoolean({})).toBeFalsy();
       expect(isBoolean(() => {})).toBeFalsy();
     });
+    it('properly tells if a value is an array', () => {
+      expect(isBoolean([])).toBeTruthy();
+      expect(isBoolean(true)).toBeFalsy();
+      expect(isBoolean('hi')).toBeFalsy();
+      expect(isBoolean(3)).toBeFalsy();
+      expect(isBoolean({})).toBeFalsy();
+      expect(isBoolean(() => {})).toBeFalsy();
+    });
+
   });
 
   describe('casters', () => {
