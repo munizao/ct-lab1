@@ -26,6 +26,7 @@ describe('validator module', () => {
 
     it('throws if value is not castable to number', () => {
       expect(() => castToNumber('hi')).toThrowErrorMatchingSnapshot();
+      expect(() => castToNumber('')).toThrowErrorMatchingSnapshot();
       expect(() => castToNumber({})).toThrowErrorMatchingSnapshot();
     });
   });
