@@ -36,12 +36,12 @@ describe('validator module', () => {
       expect(isBoolean(() => {})).toBeFalsy();
     });
     it('properly tells if a value is an array', () => {
-      expect(isBoolean([])).toBeTruthy();
-      expect(isBoolean(true)).toBeFalsy();
-      expect(isBoolean('hi')).toBeFalsy();
-      expect(isBoolean(3)).toBeFalsy();
-      expect(isBoolean({})).toBeFalsy();
-      expect(isBoolean(() => {})).toBeFalsy();
+      expect(isArray([])).toBeTruthy();
+      expect(isArray(true)).toBeFalsy();
+      expect(isArray('hi')).toBeFalsy();
+      expect(isArray(3)).toBeFalsy();
+      expect(isArray({})).toBeFalsy();
+      expect(isArray(() => {})).toBeFalsy();
     });
 
   });
