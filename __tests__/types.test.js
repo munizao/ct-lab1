@@ -39,12 +39,12 @@ describe('validator module', () => {
       expect(() => castToNumber({})).toThrowErrorMatchingSnapshot();
     });
 
-    it('can cast values to a string'), () => {
+    it('can cast values to a string', () => {
       expect(castToString(3)).toEqual('3');
       expect(castToString(true)).toEqual('true');
       expect(castToString([1, 2, 3, 4])).toEqual('[1, 2, 3, 4]')
       expect(castToString({})).toEqual('[object Object]');
-    }
+    });
   });
 
   it('can get the right caster', () => {
