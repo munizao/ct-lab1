@@ -2,6 +2,7 @@ const {
   isNumber,
   isString,
   castToNumber,
+  castToString,
   getCaster
 } = require('../lib/types.js');
 
