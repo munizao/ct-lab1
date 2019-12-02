@@ -1,18 +1,22 @@
 const {
   isNumber,
+  isString,
   castToNumber,
   getCaster
 } = require('../lib/types.js');
 
 describe('validator module', () => {
   describe('basic validation', () => {
-    it('properly tells if a value is a numbers', () => {
+    it('properly tells if a value is a number', () => {
       expect(isNumber(3)).toBeTruthy();
       expect(isNumber('hi')).toBeFalsy();
       expect(isNumber([])).toBeFalsy();
       expect(isNumber({})).toBeFalsy();
       expect(isNumber(() => {})).toBeFalsy();
       expect(isNumber(true)).toBeFalsy();
+    });
+    it('properly tells if a value is a string', () => {
+      expect(isString('hi')).toBeTruthy();
     });
   });
 

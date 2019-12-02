@@ -2,4 +2,6 @@
 
 exports[`validator module casters throws if value is not castable to number 1`] = `"Cannot cast >>hi<< to Number"`;
 
-exports[`validator module casters throws if value is not castable to number 2`] = `"Cannot cast >>[object Object]<< to Number"`;
+exports[`validator module casters throws if value is not castable to number 2`] = `"Cannot cast >><< to Number"`;
+
+exports[`validator module casters throws if value is not castable to number 3`] = `"Cannot cast >>[object Object]<< to Number"`;
