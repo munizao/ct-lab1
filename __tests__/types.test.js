@@ -110,6 +110,7 @@ describe('validator module', () => {
 
     it('can cast values to an object', () => {
       expect(castToObject({ color: 'blue' })).toEqual({ color: 'blue' });
+      expect(castToObject(['color', 'blue'], ['isLarge', true])).toEqual({ color:'blue', isLarge: true });
     });
 
     it('throws error if value is not castable to object', () => {
