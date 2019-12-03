@@ -9,6 +9,8 @@ const {
   castToString,
   castToBoolean,
   castToArray,
+  castToObject,
+  castToFunction,
   getCaster
 } = require('../lib/types.js');
 
