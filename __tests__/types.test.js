@@ -100,6 +100,7 @@ describe('validator module', () => {
 
     it('can cast values to an array', () => {
       expect(castToArray([1, 2])).toEqual([1,2]);
+      expect(castToArray('cat')).toEqual(['c', 'a', 't']);
       expect(castToArray({ color:'blue', isLarge: true })).toEqual([['color', 'blue'], ['isLarge', true]]);
     });
 
