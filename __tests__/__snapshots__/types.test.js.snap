@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`validator module casters throws if value is not castable to number 1`] = `"Cannot cast >>hi<< to Number"`;
+exports[`validator module casters throws error if value is not castable to array 1`] = `"received is not a function"`;
 
-exports[`validator module casters throws if value is not castable to number 2`] = `"Cannot cast >><< to Number"`;
+exports[`validator module casters throws error if value is not castable to array 2`] = `"received is not a function"`;
 
-exports[`validator module casters throws if value is not castable to number 3`] = `"Cannot cast >>[object Object]<< to Number"`;
+exports[`validator module casters throws error if value is not castable to number 1`] = `"Cannot cast >>hi<< to Number"`;
+
+exports[`validator module casters throws error if value is not castable to number 2`] = `"Cannot cast >><< to Number"`;
+
+exports[`validator module casters throws error if value is not castable to number 3`] = `"Cannot cast >>[object Object]<< to Number"`;

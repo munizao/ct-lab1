@@ -77,7 +77,7 @@ describe('validator module', () => {
       expect(castToNumber(false)).toEqual(0);
     });
 
-    it('throws if value is not castable to number', () => {
+    it('throws error if value is not castable to number', () => {
       expect(() => castToNumber('hi')).toThrowErrorMatchingSnapshot();
       expect(() => castToNumber('')).toThrowErrorMatchingSnapshot();
       expect(() => castToNumber({})).toThrowErrorMatchingSnapshot();
@@ -102,9 +102,16 @@ describe('validator module', () => {
       expect(castToArray([1, 2])).toEqual([1,2]);
       expect(castToArray({ color:'blue', isLarge: true })).toEqual([['color', 'blue'], ['isLarge', true]]);
     });
-    it('can cast values to an object'), () => {
+
+    it('throws error if value is not castable to array', () => {
+      expect(castToArray(3)).toThrowErrorMatchingSnapshot();
+      expect(castToArray(true)).toThrowErrorMatchingSnapshot();
+    });
+
+    it('can cast values to an object', () => {
       expect(castToObject({ color: 'blue' })).toEqual({ color: 'blue' });
-    }
+    });
+
     it('can cast values to a function', () => {
       const func = () => {};
       expect(castToFunction(func)).toEqual(func);
