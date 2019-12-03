@@ -112,9 +112,19 @@ describe('validator module', () => {
       expect(castToObject({ color: 'blue' })).toEqual({ color: 'blue' });
     });
 
+    it('throws error if value is not castable to object', () => {
+      expect(castToArray(3)).toThrowErrorMatchingSnapshot();
+      expect(castToArray(true)).toThrowErrorMatchingSnapshot();
+    });
+
     it('can cast values to a function', () => {
       const func = () => {};
       expect(castToFunction(func)).toEqual(func);
+    });
+
+    it('throws error if value is not castable to function', () => {
+      expect(castToArray(3)).toThrowErrorMatchingSnapshot();
+      expect(castToArray(true)).toThrowErrorMatchingSnapshot();
     });
   });
 

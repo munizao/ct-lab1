@@ -4,8 +4,24 @@ exports[`validator module casters throws error if value is not castable to array
 
 exports[`validator module casters throws error if value is not castable to array 2`] = `"received is not a function"`;
 
+exports[`validator module casters throws error if value is not castable to array 3`] = `"received is not a function"`;
+
+exports[`validator module casters throws error if value is not castable to array 4`] = `"received is not a function"`;
+
+exports[`validator module casters throws error if value is not castable to function 1`] = `"received is not a function"`;
+
+exports[`validator module casters throws error if value is not castable to function 2`] = `"received is not a function"`;
+
 exports[`validator module casters throws error if value is not castable to number 1`] = `"Cannot cast >>hi<< to Number"`;
 
 exports[`validator module casters throws error if value is not castable to number 2`] = `"Cannot cast >><< to Number"`;
 
 exports[`validator module casters throws error if value is not castable to number 3`] = `"Cannot cast >>[object Object]<< to Number"`;
+
+exports[`validator module casters throws error if value is not castable to object 1`] = `"received is not a function"`;
+
+exports[`validator module casters throws error if value is not castable to object 2`] = `"received is not a function"`;
+
+exports[`validator module casters throws error if value is not castable to object 3`] = `"received is not a function"`;
+
+exports[`validator module casters throws error if value is not castable to object 4`] = `"received is not a function"`;
