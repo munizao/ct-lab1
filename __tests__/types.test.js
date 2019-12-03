@@ -100,6 +100,13 @@ describe('validator module', () => {
       expect(castToArray([1, 2])).toEqual([1,2]);
       expect(castToArray({color:'blue', isLarge: true})).toEqual([['color', 'blue'], ['isLarge', true]]);
     });
+    it('can cast values to an object'), () => {
+      expect(castToObject({color: 'blue'})).toEqual({color: 'blue'});
+    }
+    it('can cast values to a function', () => {
+      const func = () => {};
+      expect(castToFunction(func)).toEqual(func);
+    });
   });
 
   it('can get the right caster', () => {
