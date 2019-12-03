@@ -130,6 +130,11 @@ describe('validator module', () => {
 
   it('can get the right caster', () => {
     expect(getCaster(Number)).toEqual(castToNumber);
+    expect(getCaster(String)).toEqual(castToString);
+    expect(getCaster(Boolean)).toEqual(castToBoolean);
+    expect(getCaster(Array)).toEqual(castToArray);
+    expect(getCaster(Object)).toEqual(castToObject);
+    expect(getCaster(Function)).toEqual(castToFunction);
     expect(getCaster(Promise)).toBeNull();
   });
 });
